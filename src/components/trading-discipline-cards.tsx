@@ -97,7 +97,7 @@ const tradingPrinciples = [
 
 export function TradingDisciplineCards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
       {tradingPrinciples.map((principle) => (
         <Card 
           key={principle.title} 
@@ -105,15 +105,15 @@ export function TradingDisciplineCards() {
           shadow="none"
         >
           <div className={`absolute inset-0 bg-gradient-to-br ${principle.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-          <CardBody className="flex flex-col items-center text-center p-8 relative z-10">
-            <div className={`relative mb-6 p-5 rounded-3xl bg-gradient-to-br ${principle.gradient} shadow-lg group-hover:shadow-xl transition-all duration-300`}>
-              <Icon icon={principle.icon} className="w-12 h-12 text-white" />
-              <div className="absolute inset-0 bg-white/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <CardBody className="flex flex-col items-center text-center p-4 sm:p-6 lg:p-8 relative z-10">
+            <div className={`relative mb-3 sm:mb-4 lg:mb-6 p-3 sm:p-4 lg:p-5 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${principle.gradient} shadow-lg group-hover:shadow-xl transition-all duration-300`}>
+              <Icon icon={principle.icon} className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-white" />
+              <div className="absolute inset-0 bg-white/20 rounded-2xl sm:rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <h3 className={`text-2xl font-bold mb-4 ${principle.textColor} group-hover:scale-105 transition-transform duration-300`}>
+            <h3 className={`text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 lg:mb-4 ${principle.textColor} group-hover:scale-105 transition-transform duration-300 leading-tight`}>
               {principle.title}
             </h3>
-            <p className="text-default-600 dark:text-default-400 text-base leading-relaxed group-hover:text-default-700 dark:group-hover:text-default-300 transition-colors duration-300">
+            <p className="text-sm sm:text-base text-default-600 dark:text-default-400 leading-relaxed group-hover:text-default-700 dark:group-hover:text-default-300 transition-colors duration-300">
               {principle.description}
             </p>
           </CardBody>

@@ -11,11 +11,11 @@ export const ThemeSwitcher: React.FC = () => {
       size="sm"
       variant="ghost"
       onPress={toggleTheme}
-      className="min-w-0 px-3"
+      className="min-w-0 px-2 sm:px-3 text-xs sm:text-sm"
       startContent={
         <Icon 
           icon={isDark ? "lucide:sun" : "lucide:moon"} 
-          className="w-4 h-4" 
+          className="w-3 h-3 sm:w-4 sm:h-4" 
         />
       }
     >
