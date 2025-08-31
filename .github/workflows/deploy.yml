@@ -28,6 +28,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Build output contents:"
+          ls -la dist/
+          echo "Checking if dist/index.html exists:"
+          test -f dist/index.html && echo "✅ Build successful" || echo "❌ Build failed"
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
