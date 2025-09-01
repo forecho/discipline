@@ -1,15 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discipline - 交易纪律管理</title>
-  </head>
-  <body class="h-full min-h-screen">
-    <div id="root"></div>
+    
+    <!-- 基础 SEO -->
+    <title>交易纪律提醒 - 建立正确的交易习惯，保持冷静的头脑</title>
+    <meta name="description" content="交易纪律提醒应用，帮助交易者建立和维持良好的交易习惯。包含时刻冷静、耐心等待、严格止损等10个重要交易原则，支持深色模式。" />
+    <meta name="keywords" content="交易纪律,交易习惯,交易原则,投资纪律,交易心理,风险管理,止损,仓位控制,交易技巧" />
+    <meta name="author" content="Discipline Trading" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://discipline.forecho.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://discipline.forecho.com" />
+    <meta property="og:title" content="交易纪律提醒 - 建立正确的交易习惯" />
+    <meta property="og:description" content="帮助交易者建立和维持良好的交易习惯，包含10个重要交易原则，支持深色模式。" />
+    <meta property="og:image" content="https://discipline.forecho.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="交易纪律提醒" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://discipline.forecho.com" />
+    <meta property="twitter:title" content="交易纪律提醒 - 建立正确的交易习惯" />
+    <meta property="twitter:description" content="帮助交易者建立和维持良好的交易习惯，包含10个重要交易原则。" />
+    <meta property="twitter:image" content="https://discipline.forecho.com/twitter-image.png" />
+    
+    <!-- 移动端优化 -->
+    <meta name="theme-color" content="#0072f5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="交易纪律提醒" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "交易纪律提醒",
+      "description": "帮助交易者建立和维持良好的交易习惯的应用",
+      "url": "https://discipline.forecho.com",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Discipline Trading"
+      },
+      "featureList": [
+        "时刻冷静",
+        "耐心等待", 
+        "禁止埋单",
+        "严格止损",
+        "顺势而为",
+        "控制仓位",
+        "利润奔跑",
+        "持续学习",
+        "独立思考",
+        "保持纪律"
+      ]
+    }
+    </script>
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- 安全相关 -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    
     <script type="module" src="/src/main.tsx"></script>
     <script src="https://cdn.jsdelivr.net/npm/heroui-chat-script@0/dist/index.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/heroui-chat-script@beta/dist/select-and-edit-utils.global.js"></script>
+  </head>
+  <body class="h-full min-h-screen">
+    <div id="root"></div>
   </body>
 </html>
